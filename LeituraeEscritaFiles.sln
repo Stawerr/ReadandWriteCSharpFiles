@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeituraeEscritaFiles", "LeituraeEscritaFiles\LeituraeEscritaFiles.csproj", "{5A4B964F-D3B6-4778-A570-80A37CD82F9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeituraeEscritaFiles", "LeituraeEscritaFiles\LeituraeEscritaFiles.csproj", "{5A4B964F-D3B6-4778-A570-80A37CD82F9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio2", "Exercicio2\Exercicio2.csproj", "{4DB7AAEB-AEE3-40B2-A223-4CC1B13C7385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercicio2", "Exercicio2\Exercicio2.csproj", "{4DB7AAEB-AEE3-40B2-A223-4CC1B13C7385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio3", "Exercicio3\Exercicio3.csproj", "{B597DFEC-027F-48C0-A2B0-15F27F0270CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4DB7AAEB-AEE3-40B2-A223-4CC1B13C7385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DB7AAEB-AEE3-40B2-A223-4CC1B13C7385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DB7AAEB-AEE3-40B2-A223-4CC1B13C7385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B597DFEC-027F-48C0-A2B0-15F27F0270CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B597DFEC-027F-48C0-A2B0-15F27F0270CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B597DFEC-027F-48C0-A2B0-15F27F0270CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B597DFEC-027F-48C0-A2B0-15F27F0270CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
