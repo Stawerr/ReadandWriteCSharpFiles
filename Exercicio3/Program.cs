@@ -12,9 +12,10 @@ namespace Exercicio3
             while (!rd.EndOfStream)
             {
                 string linha = rd.ReadLine();
-                string[] palavras = linha.Split();
+                string[] palavras = linha.Split(';');
                
-                    Console.WriteLine(palavras[4]);
+                Console.WriteLine(linha);
+                
             }
             rd.Close();
             //wd.Close();
