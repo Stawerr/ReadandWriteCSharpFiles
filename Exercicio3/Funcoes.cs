@@ -69,5 +69,12 @@ namespace Exercicio3
             }
             return null;
         }
+
+        public static void TopVendas(List<string[]> produtos, List<string[]> compras)
+        {
+
+
+            
+        }
     }
 }

@@ -72,7 +72,6 @@ namespace Exercicio3
 
             string path = "D:\\"+Funcoes.NomeCliente(clienteVec, id)+".txt";
             File.WriteAllLines(path , escrever);
-
         }
     }
 }
