@@ -6,18 +6,56 @@ namespace Exercicio3
     {
         static void Main(string[] args)
         {
-            StreamReader rd = new StreamReader("C:\\produtos.csv");
-          //  StreamWriter wd = new StreamWriter("C:\\produtos.csv");
 
-            while (!rd.EndOfStream)
-            {
-                string linha = rd.ReadLine();
-                string[] palavras = linha.Split(';');
+            StreamReader rdStock = new StreamReader("C:\\produtos.csv");
+            StreamReader rdCompras = new StreamReader("C:\\compras.csv");
+            StreamReader rdClientes = new StreamReader("C:\\clientes.csv");
+            //  StreamWriter wd = new StreamWriter("C:\\produtos.csv");
+
+            //while (!rdStock.EndOfStream)
+            //{
+            //    string linhaStock = rdStock.ReadLine();
+            //    string[] palavrasStock = linhaStock.Split(';');
                
-                Console.WriteLine(linha);
+            //    Console.WriteLine(linhaStock);
+            //}
+            //Console.WriteLine("\n");
+
+            //while (!rdClientes.EndOfStream)
+            //{
+            //    string linhaClientes = rdClientes.ReadLine();
+            //    string[] palavrasClientes = linhaClientes.Split(';');
+
+            //    Console.WriteLine(linhaClientes);
+            //}
+
+            //Console.WriteLine("\n");
+
+            //while (!rdCompras.EndOfStream)
+            //{
+            //    string linhaCompras = rdCompras.ReadLine();
+            //    string[] palavrasCompras = linhaCompras.Split(';');
+
+            //    Console.WriteLine(linhaCompras);
+            //}
+
+            while (!rdCompras.EndOfStream)
+            {
+                string linhaCompras = rdCompras.ReadLine();
+                string[] palavrasCompras = linhaCompras.Split(';');
+
+                string linhaClientes = rdClientes.ReadLine();
+                string[] palavrasClientes = linhaClientes.Split(';');
+
+                Console.WriteLine(linhaClientes);
+                
+                Console.WriteLine(linhaCompras);
                 
             }
-            rd.Close();
+
+                rdStock.Close();
+            rdCompras.Close();
+            rdClientes.Close();
             //wd.Close();
             
         }
