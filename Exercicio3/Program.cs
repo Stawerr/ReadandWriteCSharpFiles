@@ -7,53 +7,48 @@ namespace Exercicio3
         static void Main(string[] args)
         {
 
-            StreamReader rdStock = new StreamReader("C:\\produtos.csv");
-            StreamReader rdCompras = new StreamReader("C:\\compras.csv");
-            StreamReader rdClientes = new StreamReader("C:\\clientes.csv");
-            //  StreamWriter wd = new StreamWriter("C:\\produtos.csv");
+            StreamReader rdStock = new StreamReader("D:\\produtos.csv");
+            StreamReader rdCompras = new StreamReader("D:\\compras.csv");
+            StreamReader rdClientes = new StreamReader("D:\\clientes.csv");
+            StreamWriter wd = new StreamWriter("D:\\produtosclintes.csv",true);
 
-            //while (!rdStock.EndOfStream)
-            //{
-            //    string linhaStock = rdStock.ReadLine();
-            //    string[] palavrasStock = linhaStock.Split(';');
-               
-            //    Console.WriteLine(linhaStock);
-            //}
-            //Console.WriteLine("\n");
+            while (!rdStock.EndOfStream)
+            {
+                string linhaStock = rdStock.ReadLine();
+                string[] palavrasStock = linhaStock.Split(';');
 
-            //while (!rdClientes.EndOfStream)
-            //{
-            //    string linhaClientes = rdClientes.ReadLine();
-            //    string[] palavrasClientes = linhaClientes.Split(';');
+                Console.WriteLine(linhaStock);
+            }
+            Console.WriteLine("\n");
 
-            //    Console.WriteLine(linhaClientes);
-            //}
+            while (!rdClientes.EndOfStream)
+            {
+                string linhaClientes = rdClientes.ReadLine();
+                string[] palavrasClientes = linhaClientes.Split(';');
 
-            //Console.WriteLine("\n");
+                Console.WriteLine(linhaClientes);
+            }
 
-            //while (!rdCompras.EndOfStream)
-            //{
-            //    string linhaCompras = rdCompras.ReadLine();
-            //    string[] palavrasCompras = linhaCompras.Split(';');
+            Console.WriteLine("\n");
 
-            //    Console.WriteLine(linhaCompras);
-            //}
+            int cliente;
+            Console.WriteLine("Qual o ID do cliente a guardar? ");
+            cliente = int.Parse(Console.ReadLine());
 
             while (!rdCompras.EndOfStream)
             {
                 string linhaCompras = rdCompras.ReadLine();
                 string[] palavrasCompras = linhaCompras.Split(';');
 
-                string linhaClientes = rdClientes.ReadLine();
-                string[] palavrasClientes = linhaClientes.Split(';');
-
-                Console.WriteLine(linhaClientes);
-                
-                Console.WriteLine(linhaCompras);
+                if (palavrasCompras[0] == cliente.ToString())
+                {
+                    Console.WriteLine(linhaCompras);
+                }
                 
             }
 
-                rdStock.Close();
+
+            rdStock.Close();
             rdCompras.Close();
             rdClientes.Close();
             //wd.Close();
